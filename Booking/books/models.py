@@ -10,12 +10,6 @@ def generate_referenceNo():
         if Booking.objects.filter(referenceNo=code).count() == 0:
             break
         return code
-
-VENUES = (
-	('Conference Room A', 'Conference Room A'),
-	('Conference Room B', 'Conference Room B'),
-	('Coworking Space', 'Coworking Space'),
-)
     
 # Create your models here.
 
